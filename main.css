@@ -8,22 +8,30 @@
   width: 100%;
 }
 
+.row {
+  /*text-align: center;*/
+  border: 1px;
+  border-style: dotted;
+}
 
 .row:before,
 .row:after {
-  /*content: "";*/
-  /*display: table;*/
-  clear: both;
-  border: 1px;
-
+  content: " ";
+  display: table;
+/*  border-style: dotted;
+  border: 1px;*/
 }
 
-[class*="col-"] {
+.row:after {
+  clear: both;
+}
+
+[class*='col-'] {
   float: left;
   min-height: 1px;
   width: 8.33%;
   padding: 10px;
-  background-color: yellow;
+  border: solid 2px;
 }
 
 .col-1 {width: 8.33%;}
